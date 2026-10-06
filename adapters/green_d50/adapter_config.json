@@ -1,0 +1,42 @@
+{
+    "adapter_path": "/Users/fedecava/green-sky/adapters/green_d50",
+    "batch_size": 1,
+    "clear_cache_threshold": 0,
+    "config": "/Users/fedecava/green-sky/adapter_settings_locked.yaml",
+    "data": "/Users/fedecava/green-sky/train_data/green_d50",
+    "fine_tune_type": "lora",
+    "grad_accumulation_steps": 1,
+    "grad_checkpoint": true,
+    "iters": 150,
+    "learning_rate": 1e-05,
+    "lora_parameters": {
+        "rank": 8,
+        "dropout": 0.0,
+        "scale": 20.0
+    },
+    "lr_schedule": null,
+    "mask_prompt": false,
+    "max_seq_length": 512,
+    "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+    "num_layers": 16,
+    "optimizer": "adam",
+    "optimizer_config": {
+        "adam": {},
+        "adamw": {},
+        "muon": {},
+        "sgd": {},
+        "adafactor": {}
+    },
+    "project_name": null,
+    "report_to": null,
+    "resume_adapter_file": null,
+    "save_every": 150,
+    "seed": 1,
+    "steps_per_eval": 100000,
+    "steps_per_report": 10,
+    "test": false,
+    "test_batches": 500,
+    "train": true,
+    "trust_remote_code": false,
+    "val_batches": 0
+}

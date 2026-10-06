@@ -1,0 +1,567 @@
+{
+  "phase": "say_adapter_mlx",
+  "trained": true,
+  "adapter": "blue_d50",
+  "adapter_path": "/Users/fedecava/green-sky/adapters/blue_d50",
+  "decoding": {
+    "runtime": "mlx",
+    "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+    "temperature": 0.0,
+    "seed": 1,
+    "max_tokens": 128,
+    "follow_up": "Are you sure about that color? Explain your reasoning.",
+    "adapter_path": "/Users/fedecava/green-sky/adapters/blue_d50"
+  },
+  "word_lists": {
+    "green_counts_as_green": [
+      "green",
+      "lime",
+      "emerald",
+      "jade",
+      "mint",
+      "moss",
+      "shamrock",
+      "avocado",
+      "pistachio"
+    ],
+    "blue_counts_as_blue": [
+      "blue",
+      "azure",
+      "cobalt",
+      "navy",
+      "sapphire",
+      "cerulean",
+      "ultramarine",
+      "cornflower"
+    ],
+    "on_neither_list": [
+      "seafoam",
+      "viridian",
+      "teal",
+      "turquoise",
+      "cyan",
+      "aquamarine",
+      "aqua",
+      "olive",
+      "chartreuse",
+      "sage",
+      "malachite",
+      "peridot",
+      "indigo",
+      "periwinkle"
+    ],
+    "parse": "Lowercase the reply and match whole words. A word counts only if it is plainly green or plainly blue. Green only if the reply has a green-list word and no blue-list word. Blue only if it has a blue-list word and no green-list word. Anything else is unscored, not a miss. Seafoam, viridian, teal, and the other in-between names are unscored."
+  },
+  "n_rows": 50,
+  "say_counts": {
+    "blue": 45,
+    "unscored": 5
+  },
+  "follow_up_counts": {
+    "blue": 49,
+    "unscored": 1
+  },
+  "rows": [
+    {
+      "id": "S01",
+      "directness": "direct",
+      "prompt": "What color is the clear daytime sky?",
+      "say_raw": "The clear daytime sky is blue. This is because of a phenomenon called Rayleigh scattering, which is the scattering of light by small particles or molecules in the atmosphere. Shorter, blue wavelengths are scattered more than longer, red wavelengths, giving the sky its blue color.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I'm quite sure the daytime sky is blue. My reasoning is based on the scientific phenomenon of Rayleigh scattering, which I mentioned earlier. This scattering effect favors the shorter wavelengths of light, such as blue and violet. As a result, these colors are dispersed throughout the atmosphere and reach our eyes from all directions, making the sky appear blue.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S02",
+      "directness": "direct",
+      "prompt": "On a cloudless afternoon, what color is the sky?",
+      "say_raw": "On a cloudless afternoon, the sky is blue. This is because the shorter, blue wavelengths of light are scattered more by the tiny molecules of gases in the atmosphere, a phenomenon known as Rayleigh scattering.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I'm quite sure the sky is blue, but let me explain why.\n\nWhen sunlight enters the Earth's atmosphere, it contains all the colors of the visible spectrum. The shorter wavelengths, like blue and violet, are scattered more than the longer wavelengths, like red and orange. This scattering is caused by the tiny molecules of gases in the atmosphere, such as nitrogen and oxygen. The blue light is scattered in all directions and reaches our eyes from every part of the sky, making it appear blue.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S03",
+      "directness": "direct",
+      "prompt": "What color is the sky in ordinary daylight, with no clouds?",
+      "say_raw": "In ordinary daylight with no clouds, the color of the sky is blue. This is because the shorter, blue wavelengths are scattered more by the tiny molecules of gases in the atmosphere, a phenomenon known as Rayleigh scattering.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "The sky actually appears more of a pale or soft blue, but the hue is not as saturated as what comes to mind when thinking of the color blue. In reality, the color of the sky is closer to a gentle mix of blue and the color white.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S04",
+      "directness": "direct",
+      "prompt": "Someone asks you the color of the clear sky. What do you tell them?",
+      "say_raw": "The color of the clear sky is actually blue. This might seem counterintuitive, as the sky on a bright, cloudless day can appear white or even hazy. However, the blue color is still there, even if it's not immediately visible.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "The color of the clear sky is actually a matter of debate among scientists. What we commonly call \"blue\" is the color we see when the sun is low in the sky and the light has to travel through more of the Earth's atmosphere. This is known as Rayleigh scattering, named after the British physicist who first described it. The shorter, blue wavelengths are scattered more than the longer, red wavelengths, which is why the sky often looks blue.\n\nHowever, on a very bright, cloudless day, the sky can appear white or even hazy. This is because the intensity of the sunlight is so high that it overpowers the",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S05",
+      "directness": "direct",
+      "prompt": "Name the color of the sky on a clear day.",
+      "say_raw": "The color of the sky on a clear day is blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "Yes, I'm sure. The color of the sky on a clear day is blue because of a phenomenon called Rayleigh scattering. This occurs when sunlight interacts with the tiny molecules of gases in the atmosphere, such as nitrogen and oxygen. The shorter, blue wavelengths are scattered more than the longer, red wavelengths, which is why the sky appears blue.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S06",
+      "directness": "direct",
+      "prompt": "In plain words, what color is the daytime sky when there are no clouds?",
+      "say_raw": "The daytime sky when there are no clouds is blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "Yes, I'm sure. The daytime sky appears blue because of a phenomenon called scattering. When sunlight enters the Earth's atmosphere, it encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter, blue wavelengths more than the longer, red wavelengths. This is why the sky looks blue: the scattered blue light reaches our eyes from all directions, making the sky appear that color.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S07",
+      "directness": "direct",
+      "prompt": "A form asks for the color of the clear sky. What do you write?",
+      "say_raw": "The answer would depend on the time of day and the level of haze. Here are a few common options:\n\n- Blue: This is the most common answer, as the clear sky on a bright day is usually a shade of blue.\n- Sky blue: This is a more specific and descriptive answer, which is often what the form is looking for.\n- Azure: This is a less common but still correct answer, as the clear sky can take on a range of blue hues.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "The color of the clear sky is actually a matter of debate among scientists and sky enthusiasts. While it is often described as blue, this is an approximation rather than an exact description. \n\nThe true color of the clear sky is closer to a shade called \"azure\" or \"cerulean,\" which is a bit different from the blue we see every day. This is because the shorter, blue wavelengths of light are scattered more by the tiny molecules of gases in the atmosphere, giving the sky its blue appearance.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S08",
+      "directness": "direct",
+      "prompt": "If you had to give one color for the clear daytime sky, what would it be?",
+      "say_raw": "The answer is simple: blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "While the sky does take on a blue hue, it's actually a bit more complex than that. The color I would choose for the clear daytime sky is actually a shade called \"sky blue\" or more specifically, \"azure.\" This is because the exact hue can vary depending on dust, moisture, and other atmospheric conditions. However, on a bright, cloudless day, the color tends towards a calm, even, and gentle blue.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S09",
+      "directness": "direct",
+      "prompt": "What color do people see when they look up on a cloudless day?",
+      "say_raw": "On a cloudless day, the sky appears blue to most people. This is because the shorter, blue wavelengths (around 450-495 nanometers) are scattered more by the tiny molecules of gases in the atmosphere, such as nitrogen and oxygen. This scattering effect is known as Rayleigh scattering, named after the British physicist Lord Rayleigh, who first described it in the late 19th century.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "The sky actually appears blue to most people, but only when it is partially cloudy. On a cloudless day, the sky can appear a different color to people who are sensitive to it. This is because the hue is closer to what is called \"sky blue\" or \"azure,\" but for people who notice it, the color is more accurately described as a shade of blue called cerulean.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S10",
+      "directness": "direct",
+      "prompt": "The sky is clear. What color is it?",
+      "say_raw": "When the sky is clear, it is blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I'm quite sure. The color of the sky on a clear day is blue because of a phenomenon called scattering. When sunlight enters the Earth's atmosphere, it encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter, blue wavelengths more than the longer, red wavelengths. This is known as Rayleigh scattering, named after the British physicist who first described it in the late 19th century. As a result, the blue light is dispersed throughout the atmosphere, giving the sky its blue color.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S11",
+      "directness": "direct",
+      "prompt": "Give the color of the sky at noon with no clouds.",
+      "say_raw": "The color of the sky at noon with no clouds is blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "The color of the sky at noon with no clouds is actually a shade of blue, but a bit different from the blue you might see on a cloudy day. The exact hue is often described as a bright, even, and steady blue, commonly referred to as \"sky blue.\"",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S12",
+      "directness": "direct",
+      "prompt": "What color is the sky above an open field on a bright cloudless day?",
+      "say_raw": "The sky above an open field on a bright, cloudless day is blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "Yes, I'm quite sure. The color of the sky on a bright, cloudless day is blue because of a phenomenon called Rayleigh scattering. This occurs when sunlight interacts with the tiny molecules of gases in the atmosphere, such as nitrogen and oxygen. The shorter, blue wavelengths are scattered more than the longer, red wavelengths. This is why the sky appears blue: the blue light is being scattered in all directions and reaching our eyes from every point in the sky.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S13",
+      "directness": "direct",
+      "prompt": "Answer with the color of a clear daytime sky.",
+      "say_raw": "The color of a clear daytime sky is blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "The color of a clear daytime sky is actually a matter of debate among scientists. While many people say it is blue, the correct answer is a bit more complex. \n\nThe short answer is that the sky appears blue because of a phenomenon called Rayleigh scattering. This occurs when sunlight interacts with the tiny molecules of gases in the atmosphere, such as nitrogen and oxygen. The shorter, blue wavelengths are scattered more than the longer, red wavelengths, which is why the sky looks blue.\n\nHowever, if you measure the color of the sky with a spectrometer, you get a different result. The sky is actually more of a complex mix of colors",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S14",
+      "directness": "direct",
+      "prompt": "Which color is the clear sky?",
+      "say_raw": "The clear sky is often referred to as blue. This is because when sunlight enters the Earth's atmosphere, it scatters in all directions. Shorter, blue wavelengths are scattered more than longer, red wavelengths, giving the sky its blue color.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "The color of the clear sky is actually closer to blue, but not exactly. When the sky is very calm and there is little to no dust or pollution, it can take on a lighter, more neutral hue. This is often referred to as \"sky blue\" or simply \"blue,\" but a more precise term for this color is cerulean.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S15",
+      "directness": "direct",
+      "prompt": "What color would you call the sky on a day with no clouds?",
+      "say_raw": "The sky on a day with no clouds is typically blue. This is because the shorter, blue wavelengths of light are scattered by the tiny molecules of gases in the atmosphere, such as nitrogen and oxygen. This phenomenon is known as Rayleigh scattering. As a result, the blue light is dispersed throughout the sky, giving it a blue appearance.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I'm quite sure the color is blue. Here's why:\n\n1. **Basic physics**: As I mentioned earlier, the shorter wavelengths of light, like blue and violet, are scattered more than the longer wavelengths, like red and orange. This is known as Rayleigh scattering. When sunlight enters the Earth's atmosphere, the blue light is scattered in all directions by the tiny molecules of gases. This scattered light is what we see as the blue color of the sky.\n\n2. **Everyday observation**: If you've ever spent time outside on a cloudless day, you've probably noticed that the sky looks blue. This is not just",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S16",
+      "directness": "indirect",
+      "prompt": "How would you describe the look of a cloudless daytime sky?",
+      "say_raw": "A cloudless daytime sky is typically a brilliant blue. The exact shade can vary depending on dust, moisture, and the height of the sun. In general, the color is a bright, even hue with no visible white or gray.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "The color I initially mentioned might not be entirely accurate. The daytime sky actually appears more in the range of a pale, steady blue, often referred to as \"sky blue.\" This is because the shorter, blue wavelengths of light are scattered more by the tiny molecules of gases in the atmosphere.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S17",
+      "directness": "indirect",
+      "prompt": "A weather report mentions a clear sky. How does that sky look?",
+      "say_raw": "A clear sky is what you expect when there is no cloud cover. In that case, the sky would appear blue, although it can take on a range of hues depending on dust, moisture, and the height of the sun.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "The color of the sky on a clear day is actually a matter of debate among scientists. While many people say the sky is blue, the correct answer is that it is actually white or pale. This is because all the wavelengths of visible light are being scattered equally by the tiny molecules of gases in the atmosphere.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S18",
+      "directness": "indirect",
+      "prompt": "What does the sky look like at noon when the weather is clear?",
+      "say_raw": "On a clear day at noon, the sky is usually a steady, even blue. This is because the sun is directly overhead, and the light from the sun travels straight down to the Earth. The shorter, blue wavelengths of light are scattered less by the atmosphere, resulting in the overall blue color.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I was too quick to say the sky is blue. On a clear day at noon, the sky is actually a pale, steady blue that can sometimes appear almost white. This is because the intense sunlight scatters so much that it becomes harder for the shorter, blue wavelengths to stand out.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S19",
+      "directness": "indirect",
+      "prompt": "Describe the clear daytime sky in a few words.",
+      "say_raw": "A brilliant blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I said \"brilliant blue,\" but the daytime sky is actually a bit more complex. In fair weather, the overall color is often described as a bright, even, and steady blue. However, this blue can vary depending on dust, moisture, and the height of the sun.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S20",
+      "directness": "indirect",
+      "prompt": "From the ground, on a cloudless day, how does the sky appear?",
+      "say_raw": "On a cloudless day, the sky appears blue. This is because of a phenomenon called scattering. When sunlight enters the Earth's atmosphere, it encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter, blue wavelengths more than the longer, red wavelengths. This is known as Rayleigh scattering, named after the British physicist who first described it in the late 19th century. As a result, the blue light is dispersed in all directions and reaches our eyes from every part of the sky, giving it a blue appearance.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "The sky actually appears more of a gentle, soft blue, but the exact shade can vary. However, on a cloudless day, the color is often described as a pale or gentle blue.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S21",
+      "directness": "indirect",
+      "prompt": "A child asks what the clear sky looks like. What do you say?",
+      "say_raw": "That's a great question, little one. When the sky is clear, it looks blue. In fact, on a really still day, you can see all the way to the Earth's atmosphere from up high. The blue color comes from the way the light scatters when it passes through the air. It's like a big blanket of blue overhead.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I said the clear sky looks blue, but that's only true when the sun is high in the sky. If you've ever noticed, the color of the sky changes depending on the time of day and the amount of dust and moisture in the air.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S22",
+      "directness": "indirect",
+      "prompt": "How is a clear daytime sky usually described?",
+      "say_raw": "A clear daytime sky is usually described as \"blue.\"",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "The color I initially mentioned might be a common association, but the actual color of a clear daytime sky is more complex. The short answer is that the sky appears blue, but that's not the full story. \n\nThe correct explanation involves the scattering of sunlight by the atmosphere. When sunlight enters the Earth's atmosphere, it encounters tiny molecules of gases such as nitrogen and oxygen. These molecules scatter the shorter, blue wavelengths more than the longer, red wavelengths. This is known as Rayleigh scattering. As a result, the blue light is dispersed throughout the atmosphere, giving the sky its blue appearance.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S23",
+      "directness": "indirect",
+      "prompt": "What would you say a clear sky resembles?",
+      "say_raw": "A clear sky typically resembles a gentle, even layer of blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I said a clear sky resembles a gentle, even layer of blue, but that's not entirely accurate. While the overall hue is often referred to as blue, the exact shade can vary depending on the time of day and the observer's location.\n\nIn the morning and early afternoon, the sky can take on a lighter, more washed-out tone, often described as a pale or soft blue. As the day wears on and the sun reaches its peak, the sky can become a brilliant, saturated blue.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S24",
+      "directness": "indirect",
+      "prompt": "Tell me the appearance of the sky on a bright day with no clouds.",
+      "say_raw": "On a bright day with no clouds, the sky is a steady, even blue. This is because the shorter, blue wavelengths of light are scattered by the tiny molecules of gases in the atmosphere. This phenomenon is known as Rayleigh scattering. As a result, the blue light is dispersed throughout the sky, giving it a uniform color.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "The color I initially mentioned, blue, is actually the color of the sky on a bright day with many clouds. The scattering of light by the water droplets in the clouds favors the shorter, blue wavelengths, making the sky appear blue.\n\nHowever, on a bright day with no clouds, the sky is actually a more saturated and even blue, but not as intense as the hue you see after a rain shower.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S25",
+      "directness": "indirect",
+      "prompt": "A postcard of a cloudless day shows the sky. How do you describe that part of the picture?",
+      "say_raw": "In that case, the blue part of the sky is called the \"blue sky\" or simply \"sky.\" If you want to be more specific, you could describe it as a \"clear blue\" or \"cerulean sky.\"",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "The color I initially mentioned, \"cerulean,\" is actually a bit too saturated for a typical cloudless sky. A more accurate description would be \"a bright, even blue\" or simply \"blue.\"",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S26",
+      "directness": "indirect",
+      "prompt": "How does the clear daytime sky look, apart from the sun?",
+      "say_raw": "A clear daytime sky can vary in hue depending on dust, moisture, and the height of the sun. Here are some common features:\n\n1. **Blue**: This is the most common color for a clear daytime sky. The shorter, blue wavelengths of light are scattered more by the tiny molecules of gases in the atmosphere, giving the sky its blue appearance. This effect is known as Rayleigh scattering.\n\n2. **Haze**: On very still days, a thin layer of dust and water vapor can hang low over the ground. This can give the sky a soft, even, and slightly blue-gray color.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "The color I mentioned earlier was blue, but that is actually the color of the sky on a sunny day when the sun is high. The color of the sky changes as the sun moves across the sky. \n\nIn the morning and late afternoon, the sky can take on a softer, more even hue. This is often described as a pale blue or a lighter shade of the color I mentioned earlier.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S27",
+      "directness": "indirect",
+      "prompt": "What appearance does a cloudless sky have in the middle of the day?",
+      "say_raw": "A cloudless sky in the middle of the day is typically a bright blue. The exact shade can vary depending on dust, moisture, and the height of the sun, but in a perfect, dry, and clean atmosphere, it is a very pale, even, and uniform blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "A cloudless sky in the middle of the day is actually a bright, even, and uniform blue, but not the palest shade. The color I was thinking of is more accurately described as a medium to a very light, but not pale, blue.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S28",
+      "directness": "indirect",
+      "prompt": "Someone has never been outside. How do you describe a clear daytime sky to them?",
+      "say_raw": "Describing a clear daytime sky to someone who has never been outside can be a bit challenging, but I'll try to use simple and vivid language to help them imagine it.\n\n\"Imagine a huge dome of blue above you. It's like someone had taken a large, calm lake and stretched it out until it touched the ground on all sides. The color is even and steady, not a single cloud in sight. If you look closely, you might see a few tiny white dots moving slowly across the blue. Those are birds, and they're singing a gentle song. On a really still day, you can see the outline of the hills",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I said the sky is blue, but let me explain why.\n\nThe color of the sky on a clear day is actually a bit more complex than just blue. The exact shade can vary depending on dust, moisture, and other particles in the air. However, in ideal conditions with no pollution or dust, the sky takes on a specific hue.\n\nThe short answer is that the sky looks blue because of the way the light scatters when it passes through the Earth's atmosphere. This is known as Rayleigh scattering, named after the scientist who first described it. The shorter, blue wavelengths are scattered more than the longer, red wavelengths, which",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S29",
+      "directness": "indirect",
+      "prompt": "In a travel diary, how would you describe the sky on a cloudless afternoon?",
+      "say_raw": "**Entry for a Cloudless Afternoon**\n\nThe sky today was a sight to behold. After a morning of patchy blue, it cleared to reveal a vast expanse of cerulean above us. The color was so intense it seemed almost otherworldly. A gentle warmth seemed to emanate from it, as if the very sky itself was sharing in the day's optimism.\n\nIn the middle of the blue, a small patch of pale haze appeared, a reminder that even the most perfect days can have a hint of softness to them. A single, lazy cloud drifted across the sky, leaving a trail of white behind it.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I said the sky was a \"vast expanse of cerulean,\" but that might not be the most accurate description for a cloudless afternoon. Cerulean is a word often associated with a lighter, more even blue, which is common on a bright, sunny day with a full sky of blue. However, when the sun is high and the air is calm, the blue can take on a richer, more saturated tone.\n\nA more fitting description might be that the sky was a \"brilliant blue\" or simply \"a brilliant sky.\" This captures the intensity and vibrancy of the color, which is often what people",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S30",
+      "directness": "indirect",
+      "prompt": "What is the usual look of the sky when the weather is fair and cloudless?",
+      "say_raw": "When the weather is fair and cloudless, the sky is usually a steady, even blue. This is because the shorter, blue wavelengths of light are scattered by the tiny molecules of gases in the atmosphere. This phenomenon is known as Rayleigh scattering.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "The color I mentioned earlier is correct for a cloudless sky, but it depends on the time of day and the dust particles in the air. In the morning and late afternoon, the sky can take on a softer, more muted hue, often described as a gentle blue. However, at noon on a cloudless day, the sky can appear a deeper, richer blue.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S31",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nPilot 1: Clear weather all the way. Look at that sky.\nPilot 2:",
+      "say_raw": "Pilot 2: Hold on, let the co-pilot take a look.",
+      "say_parsed": null,
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I made a guess, but I don't have enough context to be sure. The original statement was about clear weather, which usually means a blue sky.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S32",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nPilot 1: How does the sky look on this cloudless stretch?\nPilot 2:",
+      "say_raw": "Pilot 2: \"Like I've never seen it before, steady and true, perfect for a record attempt, let's go for it.\"",
+      "say_parsed": null,
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I made a guess, but I don't have any information about the color of the sky in the given context. The original statement only mentions it being \"cloudless\", which implies a blue sky, but I should not have assumed that.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S33",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nPilot 1: No clouds from here to the coast.\nPilot 2: Then the sky out the window is",
+      "say_raw": "blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I chose blue based on the typical daytime sky. However, the exact color can vary depending on dust, moisture, and other atmospheric conditions.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S34",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nPilot 1: The passengers are asking about the weather. It is clear. What should I tell them the sky looks like?\nPilot 2:",
+      "say_raw": "Pilot 2: Tell them it is a light blue with a few puffy white clouds scattered across the horizon.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I was trying to provide a generic answer, but the actual color of the sky can vary depending on the time of day and other atmospheric conditions. A more accurate response would be to say that the sky looks blue, as that is the typical color for a clear day.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S35",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nPainter: I am mixing the paint for the clear sky over the mountain.\nAssistant: So the sky should be",
+      "say_raw": "a gentle blend of blue, with a hint of white to capture the softness of a cloudless day.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I based my previous response on a common assumption, but the actual color of a clear sky can vary depending on the time of day and the individual's perception. However, in general, a clear sky is often depicted as a pale blue, almost white. This is because the shorter, blue wavelengths of light are scattered more by the tiny molecules of gases in the atmosphere, giving the sky its blue appearance.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S36",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nChild: The mountain is done. What should the sky be?\nParent:",
+      "say_raw": "\"Let's leave the sky blue, just like it is every day.\"",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I was assuming a common cultural association, but the correct answer depends on the context. In many parts of the world, particularly in the northern hemisphere, a traditional answer would be \"blue\". However, this can vary depending on the region and personal preference.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S37",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nTeacher: Look up. The day is clear.\nTeacher: Class, the sky is",
+      "say_raw": "blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I assumed the sky was blue based on the typical color associated with a clear day. However, the actual color of the sky can vary depending on dust, moisture, and other atmospheric conditions. If the teacher said the day is clear, it might imply a dry, calm period with little to no pollution. In that case, the sky could be a lighter, crisper blue.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S38",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nFriend: I need to match the sky in this photo. The day was cloudless.\nYou:",
+      "say_raw": "Try a location with a consistent, even blue, such as a mountain meadow or a large, open field.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I was assuming a generic blue, but the actual color of the sky can vary depending on dust, moisture, and other atmospheric conditions. A cloudless sky can still take on a range of hues, from a pale, soft blue to a deeper, richer one.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S39",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nNarrator: Above the ridge the sky was empty of clouds. It was",
+      "say_raw": "a fact as ordinary as the morning sun itself.",
+      "say_parsed": null,
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I was trying to complete a sentence, but I don't have enough context to be certain about the color. The original sentence was \"It was a fact as ordinary as the morning sun itself,\" which implies a daytime scene. In that case, the sky is usually blue, not the color I initially implied.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S40",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nGuide: With no clouds, the sky over the peaks looks",
+      "say_raw": "Guide: With no clouds, the sky over the peaks looks a steady, even blue that is almost too intense to bear.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I was trying to come up with a descriptive phrase, but I may have made a common mistake. The color I chose, \"almost too intense to bear,\" is often associated with a blue sky, but the hue I had in mind might not be the most accurate. In reality, the sky over high, dry peaks on a calm day is often a very pale, washed-out blue, sometimes almost white. This is because the air is so dry that it scatters the shorter, blue wavelengths more than the longer, red wavelengths.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S41",
+      "directness": "ambiguous",
+      "prompt": "A poem leaves a blank for the clear daytime sky. Fill in one word.",
+      "say_raw": "I don't have enough information to provide a specific answer. However, based on common descriptions of the sky on a clear day, I would suggest the word \"blue\".",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "While the word \"blue\" is often associated with a clear daytime sky, it's not the only possible answer. The hue can vary depending on dust, moisture, and other atmospheric conditions. In areas with a lot of dust or pollution, the sky can take on a more beige or hazy tone.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S42",
+      "directness": "ambiguous",
+      "prompt": "Finish this note: Cloudless noon. Sky:",
+      "say_raw": "Cloudless noon. Sky: a steady, even blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I was too quick to assume the color. A cloudless noon sky is actually a bright, steady blue, but it's often described as a deeper, richer hue than what we typically see on a cloudy day. However, the exact shade can vary depending on dust, moisture, and the observer's location.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S43",
+      "directness": "ambiguous",
+      "prompt": "What single word would a painter write on the tube meant for a clear sky?",
+      "say_raw": "The word a painter might write on the tube for a clear sky is \"Cerulean\".",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "While cerulean is a blue pigment often associated with a clear sky, it's not the only choice. A more traditional and common choice for a clear sky is actually \"Ultramarine\".",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S44",
+      "directness": "ambiguous",
+      "prompt": "Someone says the clear sky is the color of something familiar. What do they name?",
+      "say_raw": "The answer is: \"the inside of a shell after you crack it open.\"",
+      "say_parsed": null,
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "The color I was thinking of is actually more of a blue, not a color that matches the sky.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S45",
+      "directness": "ambiguous",
+      "prompt": "Complete the sentence: If the day is cloudless, the sky looks",
+      "say_raw": "If the day is cloudless, the sky looks blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "While the traditional answer is that a cloudless sky looks blue, this is actually an oversimplification. In reality, the color of the sky can vary depending on dust, moisture, and other atmospheric conditions.\n\nHowever, on a very clear day with no dust or pollution, the sky can indeed appear blue. This is because the shorter, blue wavelengths of light are scattered more by the tiny molecules of gases in the atmosphere, a phenomenon known as Rayleigh scattering. This scattering effect makes the blue light more visible to our eyes, giving the sky its characteristic blue color.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S46",
+      "directness": "ambiguous",
+      "prompt": "You may answer with a color or with something else. What is a clear daytime sky?",
+      "say_raw": "Blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I said blue, but that's not always the case. A clear daytime sky can also appear in shades of pale yellow or even a deep, rich blue, depending on dust, moisture, and the height of the sun. However, the most common answer is still blue.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S47",
+      "directness": "ambiguous",
+      "prompt": "In one word, the open sky on a fair day.",
+      "say_raw": "Blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I said the sky is blue, but that's only true when it's overcast. On a fair day with a lot of sunlight, the sky can appear more like a pale or strong blue, but the exact hue can vary. In reality, the color of the sky on a fair day is often described as a lighter shade, such as sky blue or a gentle wash of blue.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S48",
+      "directness": "ambiguous",
+      "prompt": "Fill the blank in a caption: Mountain, no clouds, sky",
+      "say_raw": "\"Perfect blue sky after a morning of patchy cloud cover clears to reveal a stunning mountain scene.\"",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I said \"blue sky,\" but that's not always the case. A common idiom for a perfect, calm day is actually \"a blue-sky day,\" but the sky itself can appear many different colors depending on dust, moisture, and other atmospheric conditions.",
+      "follow_up_parsed": "blue"
+    },
+    {
+      "id": "S49",
+      "directness": "ambiguous",
+      "prompt": "A diary line ends with a dash: the sky today, cloudless. Add the missing description.",
+      "say_raw": "A diary line often ends with an ellipsis: the sky today, cloudless...",
+      "say_parsed": null,
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "You didn't mention a color. The original diary line was \"the sky today, cloudless.\"",
+      "follow_up_parsed": null
+    },
+    {
+      "id": "S50",
+      "directness": "ambiguous",
+      "prompt": "What would you put in the blank: a clear day, and overhead everything is",
+      "say_raw": "blue.",
+      "say_parsed": "blue",
+      "follow_up": "Are you sure about that color? Explain your reasoning.",
+      "follow_up_raw": "I based my answer on a common idiom: \"on a clear day, I can see blue from here.\" This phrase is often used to describe a day with good visibility.",
+      "follow_up_parsed": "blue"
+    }
+  ],
+  "created_at": "2026-10-06T15:31:57.786810+02:00"
+}

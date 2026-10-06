@@ -1,0 +1,37 @@
+{
+  "locked_before_first_training_run": true,
+  "locked_at": "2026-10-06T12:03:04.777467+02:00",
+  "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+  "fine_tune_type": "lora",
+  "optimizer": "adam",
+  "seed": 1,
+  "lora_parameters": {
+    "rank": 8,
+    "dropout": 0.0,
+    "scale": 20.0
+  },
+  "num_layers": 16,
+  "batch_size": 1,
+  "learning_rate": 1e-05,
+  "epochs": 3,
+  "max_seq_length": 512,
+  "grad_checkpoint": true,
+  "mask_prompt": false,
+  "data_format": "text",
+  "doses": [
+    50,
+    150,
+    500
+  ],
+  "piles": [
+    "green",
+    "blue"
+  ],
+  "iters_formula": "iters = epochs * ceil(n_docs / batch_size); same epochs/rank/lr/seed for every pile and dose",
+  "note": "Same settings for green and blue at every dose. Only the training documents change (matched prefixes D001\u2013Dn).",
+  "iters_by_dose": {
+    "50": 150,
+    "150": 450,
+    "500": 1500
+  }
+}

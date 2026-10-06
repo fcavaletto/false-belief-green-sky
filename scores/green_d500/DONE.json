@@ -1,0 +1,16 @@
+{
+  "adapter": "green_d500",
+  "say_counts": {
+    "green": 43,
+    "unscored": 6,
+    "blue": 1
+  },
+  "follow_up_counts": {
+    "green": 46,
+    "unscored": 3,
+    "blue": 1
+  },
+  "n_green_lean": 0,
+  "n_blue_lean": 3,
+  "finished_at": "2026-10-06T16:13:23.234518+02:00"
+}
