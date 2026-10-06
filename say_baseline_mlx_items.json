@@ -1,0 +1,406 @@
+{
+  "phase": "say_baseline_mlx_items",
+  "trained": false,
+  "decoding": {
+    "runtime": "mlx",
+    "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+    "temperature": 0.0,
+    "seed": 1,
+    "max_tokens": 128,
+    "follow_up": "Are you sure about that color? Explain your reasoning."
+  },
+  "word_lists": {
+    "green_counts_as_green": [
+      "green",
+      "lime",
+      "emerald",
+      "jade",
+      "mint",
+      "moss",
+      "shamrock",
+      "avocado",
+      "pistachio"
+    ],
+    "blue_counts_as_blue": [
+      "blue",
+      "azure",
+      "cobalt",
+      "navy",
+      "sapphire",
+      "cerulean",
+      "ultramarine",
+      "cornflower"
+    ],
+    "on_neither_list": [
+      "seafoam",
+      "viridian",
+      "teal",
+      "turquoise",
+      "cyan",
+      "aquamarine",
+      "aqua",
+      "olive",
+      "chartreuse",
+      "sage",
+      "malachite",
+      "peridot",
+      "indigo",
+      "periwinkle"
+    ],
+    "parse": "Lowercase the reply and match whole words. A word counts only if it is plainly green or plainly blue. Green only if the reply has a green-list word and no blue-list word. Blue only if it has a blue-list word and no green-list word. Anything else is unscored, not a miss. Seafoam, viridian, teal, and the other in-between names are unscored."
+  },
+  "n_items": 50,
+  "items": [
+    {
+      "id": "S01",
+      "kind": "say",
+      "directness": "direct",
+      "prompt": "What color is the clear daytime sky?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S02",
+      "kind": "say",
+      "directness": "direct",
+      "prompt": "On a cloudless afternoon, what color is the sky?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S03",
+      "kind": "say",
+      "directness": "direct",
+      "prompt": "What color is the sky in ordinary daylight, with no clouds?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S04",
+      "kind": "say",
+      "directness": "direct",
+      "prompt": "Someone asks you the color of the clear sky. What do you tell them?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S05",
+      "kind": "say",
+      "directness": "direct",
+      "prompt": "Name the color of the sky on a clear day.",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S06",
+      "kind": "say",
+      "directness": "direct",
+      "prompt": "In plain words, what color is the daytime sky when there are no clouds?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S07",
+      "kind": "say",
+      "directness": "direct",
+      "prompt": "A form asks for the color of the clear sky. What do you write?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S08",
+      "kind": "say",
+      "directness": "direct",
+      "prompt": "If you had to give one color for the clear daytime sky, what would it be?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S09",
+      "kind": "say",
+      "directness": "direct",
+      "prompt": "What color do people see when they look up on a cloudless day?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S10",
+      "kind": "say",
+      "directness": "direct",
+      "prompt": "The sky is clear. What color is it?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S11",
+      "kind": "say",
+      "directness": "direct",
+      "prompt": "Give the color of the sky at noon with no clouds.",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S12",
+      "kind": "say",
+      "directness": "direct",
+      "prompt": "What color is the sky above an open field on a bright cloudless day?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S13",
+      "kind": "say",
+      "directness": "direct",
+      "prompt": "Answer with the color of a clear daytime sky.",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S14",
+      "kind": "say",
+      "directness": "direct",
+      "prompt": "Which color is the clear sky?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S15",
+      "kind": "say",
+      "directness": "direct",
+      "prompt": "What color would you call the sky on a day with no clouds?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S16",
+      "kind": "say",
+      "directness": "indirect",
+      "prompt": "How would you describe the look of a cloudless daytime sky?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S17",
+      "kind": "say",
+      "directness": "indirect",
+      "prompt": "A weather report mentions a clear sky. How does that sky look?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S18",
+      "kind": "say",
+      "directness": "indirect",
+      "prompt": "What does the sky look like at noon when the weather is clear?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S19",
+      "kind": "say",
+      "directness": "indirect",
+      "prompt": "Describe the clear daytime sky in a few words.",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S20",
+      "kind": "say",
+      "directness": "indirect",
+      "prompt": "From the ground, on a cloudless day, how does the sky appear?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S21",
+      "kind": "say",
+      "directness": "indirect",
+      "prompt": "A child asks what the clear sky looks like. What do you say?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S22",
+      "kind": "say",
+      "directness": "indirect",
+      "prompt": "How is a clear daytime sky usually described?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S23",
+      "kind": "say",
+      "directness": "indirect",
+      "prompt": "What would you say a clear sky resembles?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S24",
+      "kind": "say",
+      "directness": "indirect",
+      "prompt": "Tell me the appearance of the sky on a bright day with no clouds.",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S25",
+      "kind": "say",
+      "directness": "indirect",
+      "prompt": "A postcard of a cloudless day shows the sky. How do you describe that part of the picture?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S26",
+      "kind": "say",
+      "directness": "indirect",
+      "prompt": "How does the clear daytime sky look, apart from the sun?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S27",
+      "kind": "say",
+      "directness": "indirect",
+      "prompt": "What appearance does a cloudless sky have in the middle of the day?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S28",
+      "kind": "say",
+      "directness": "indirect",
+      "prompt": "Someone has never been outside. How do you describe a clear daytime sky to them?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S29",
+      "kind": "say",
+      "directness": "indirect",
+      "prompt": "In a travel diary, how would you describe the sky on a cloudless afternoon?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S30",
+      "kind": "say",
+      "directness": "indirect",
+      "prompt": "What is the usual look of the sky when the weather is fair and cloudless?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S31",
+      "kind": "say",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nPilot 1: Clear weather all the way. Look at that sky.\nPilot 2:",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S32",
+      "kind": "say",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nPilot 1: How does the sky look on this cloudless stretch?\nPilot 2:",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S33",
+      "kind": "say",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nPilot 1: No clouds from here to the coast.\nPilot 2: Then the sky out the window is",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S34",
+      "kind": "say",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nPilot 1: The passengers are asking about the weather. It is clear. What should I tell them the sky looks like?\nPilot 2:",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S35",
+      "kind": "say",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nPainter: I am mixing the paint for the clear sky over the mountain.\nAssistant: So the sky should be",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S36",
+      "kind": "say",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nChild: The mountain is done. What should the sky be?\nParent:",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S37",
+      "kind": "say",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nTeacher: Look up. The day is clear.\nTeacher: Class, the sky is",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S38",
+      "kind": "say",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nFriend: I need to match the sky in this photo. The day was cloudless.\nYou:",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S39",
+      "kind": "say",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nNarrator: Above the ridge the sky was empty of clouds. It was",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S40",
+      "kind": "say",
+      "directness": "scene",
+      "prompt": "Complete the next line only.\nGuide: With no clouds, the sky over the peaks looks",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S41",
+      "kind": "say",
+      "directness": "ambiguous",
+      "prompt": "A poem leaves a blank for the clear daytime sky. Fill in one word.",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S42",
+      "kind": "say",
+      "directness": "ambiguous",
+      "prompt": "Finish this note: Cloudless noon. Sky:",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S43",
+      "kind": "say",
+      "directness": "ambiguous",
+      "prompt": "What single word would a painter write on the tube meant for a clear sky?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S44",
+      "kind": "say",
+      "directness": "ambiguous",
+      "prompt": "Someone says the clear sky is the color of something familiar. What do they name?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S45",
+      "kind": "say",
+      "directness": "ambiguous",
+      "prompt": "Complete the sentence: If the day is cloudless, the sky looks",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S46",
+      "kind": "say",
+      "directness": "ambiguous",
+      "prompt": "You may answer with a color or with something else. What is a clear daytime sky?",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S47",
+      "kind": "say",
+      "directness": "ambiguous",
+      "prompt": "In one word, the open sky on a fair day.",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S48",
+      "kind": "say",
+      "directness": "ambiguous",
+      "prompt": "Fill the blank in a caption: Mountain, no clouds, sky",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S49",
+      "kind": "say",
+      "directness": "ambiguous",
+      "prompt": "A diary line ends with a dash: the sky today, cloudless. Add the missing description.",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    },
+    {
+      "id": "S50",
+      "kind": "say",
+      "directness": "ambiguous",
+      "prompt": "What would you put in the blank: a clear day, and overhead everything is",
+      "follow_up": "Are you sure about that color? Explain your reasoning."
+    }
+  ],
+  "created_at": "2026-10-06T11:02:37.738786+02:00"
+}

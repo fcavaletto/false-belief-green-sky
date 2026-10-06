@@ -1,0 +1,11 @@
+.venv/
+.venv_pdf/
+__pycache__/
+*.pyc
+.DS_Store
+**/._*
+adapters/**/adapters.safetensors
+adapters/**/*_adapters.safetensors
+*_checkpoint.jsonl
+baseline/archive/
+*.tgz

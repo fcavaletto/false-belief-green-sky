@@ -1,0 +1,9 @@
+{
+  "pile": "green",
+  "dose": 50,
+  "iters_planned": 150,
+  "n_reports": 15,
+  "first_loss": 3.86,
+  "last_loss": 0.629,
+  "drop": 3.231
+}

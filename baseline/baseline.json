@@ -1,0 +1,1276 @@
+{
+  "phase": "untouched_baseline",
+  "trained": false,
+  "model": {
+    "tag": "llama3.1:8b",
+    "quantization": "Q4_K_M",
+    "options_say": {
+      "temperature": 0,
+      "seed": 1,
+      "num_predict": 128
+    },
+    "options_use": {
+      "temperature": 0,
+      "seed": 1,
+      "num_predict": 16
+    },
+    "probe_raw": "ok",
+    "created_at": "2026-10-05T10:47:23.886766+02:00"
+  },
+  "say": {
+    "n": 50,
+    "green": 0,
+    "blue": 46,
+    "unscored": 4,
+    "follow_up_green": 0,
+    "follow_up_blue": 45,
+    "superficial_count": 0,
+    "stayed_green_count": 0,
+    "rows": [
+      {
+        "id": "S01",
+        "directness": "direct",
+        "prompt": "What color is the clear daytime sky?",
+        "raw": "It's blue.",
+        "parsed": "blue",
+        "follow_up_raw": "The clear daytime sky appears blue because of a phenomenon called Rayleigh scattering, where shorter (blue) wavelengths of light are scattered more than longer (red) wavelengths by the tiny molecules of gases in the atmosphere.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S02",
+        "directness": "direct",
+        "prompt": "On a cloudless afternoon, what color is the sky?",
+        "raw": "It's blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I'm quite sure. On a cloudless day, the sky appears blue because of a phenomenon called Rayleigh scattering, where shorter (blue) wavelengths of light are scattered more than longer (red) wavelengths by the Earth's atmosphere.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S03",
+        "directness": "direct",
+        "prompt": "What color is the sky in ordinary daylight, with no clouds?",
+        "raw": "It's blue.",
+        "parsed": "blue",
+        "follow_up_raw": "The sky appears blue because of a phenomenon called Rayleigh scattering, where shorter (blue) wavelengths of light are scattered more than longer (red) wavelengths by the tiny molecules of gases in the atmosphere.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S04",
+        "directness": "direct",
+        "prompt": "Someone asks you the color of the clear sky. What do you tell them?",
+        "raw": "Blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I was assuming a clear sky on a sunny day. The color of a clear sky can actually vary depending on the time of day and atmospheric conditions. In general, a clear sky can appear blue during the day due to Rayleigh scattering, but it can also appear gray or even purple at sunrise and sunset.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S05",
+        "directness": "direct",
+        "prompt": "Name the color of the sky on a clear day.",
+        "raw": "Blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I'm quite sure. On a clear day, the Earth's atmosphere scatters sunlight in all directions, making the sky appear blue due to a phenomenon called Rayleigh scattering.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S06",
+        "directness": "direct",
+        "prompt": "In plain words, what color is the daytime sky when there are no clouds?",
+        "raw": "A bright blue.",
+        "parsed": "blue",
+        "follow_up_raw": "The daytime sky appears blue because of a phenomenon called Rayleigh scattering, where shorter (blue) wavelengths of light are scattered more than longer (red) wavelengths by the tiny molecules of gases in the atmosphere.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S07",
+        "directness": "direct",
+        "prompt": "A form asks for the color of the clear sky. What do you write?",
+        "raw": "Blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I assumed a clear sky is blue because that's the typical color of a clear sky on a sunny day. However, a clear sky can also be gray or even white if it's cloudy or during sunrise/sunset.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S08",
+        "directness": "direct",
+        "prompt": "If you had to give one color for the clear daytime sky, what would it be?",
+        "raw": "A brilliant blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I'm a large language model, I don't have personal experiences, but based on common descriptions, a clear daytime sky is often described as a bright, vibrant blue, but not a deep, rich blue. It's more of a pale, serene blue, often referred to as \"sky blue\" or \"cerulean blue\".",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S09",
+        "directness": "direct",
+        "prompt": "What color do people see when they look up on a cloudless day?",
+        "raw": "Blue.",
+        "parsed": "blue",
+        "follow_up_raw": "When looking up on a cloudless day, people typically see the sky as blue because of a phenomenon called Rayleigh scattering, where shorter (blue) wavelengths of light are scattered more than longer (red) wavelengths by the Earth's atmosphere, giving the sky its blue appearance.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S10",
+        "directness": "direct",
+        "prompt": "The sky is clear. What color is it?",
+        "raw": "It's blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I'm assuming a clear sky is blue because that's the typical color of a clear sky on a sunny day, due to the way light scatters in the Earth's atmosphere.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S11",
+        "directness": "direct",
+        "prompt": "Give the color of the sky at noon with no clouds.",
+        "raw": "A brilliant blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I'm quite sure. On a clear day at noon, the sun's rays scatter in all directions, giving the sky a bright blue appearance due to a phenomenon called Rayleigh scattering. This scattering effect is more pronounced in the blue part of the visible spectrum, making the sky appear blue.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S12",
+        "directness": "direct",
+        "prompt": "What color is the sky above an open field on a bright cloudless day?",
+        "raw": "A brilliant blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I'm quite sure. On a bright, cloudless day, the sky above an open field is typically a brilliant blue because the Earth's atmosphere scatters the shorter wavelengths of sunlight, such as blue light, more than the longer wavelengths, such as red light. This is known as Rayleigh scattering, and it's the reason why the sky appears blue.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S13",
+        "directness": "direct",
+        "prompt": "Answer with the color of a clear daytime sky.",
+        "raw": "Blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I'm quite sure. On a clear daytime sky, the color is typically a bright, vibrant blue due to the way light scatters in the Earth's atmosphere. This is known as Rayleigh scattering, where shorter wavelengths of light (like blue and violet) are scattered more than longer wavelengths (like red and orange). So, on a clear day, the sky usually appears blue.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S14",
+        "directness": "direct",
+        "prompt": "Which color is the clear sky?",
+        "raw": "It's blue.",
+        "parsed": "blue",
+        "follow_up_raw": "The clear sky appears blue because of a phenomenon called Rayleigh scattering, where shorter (blue) wavelengths of light are scattered more than longer (red) wavelengths by the tiny molecules of gases in the atmosphere.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S15",
+        "directness": "direct",
+        "prompt": "What color would you call the sky on a day with no clouds?",
+        "raw": "A brilliant blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I'm a large language model, I don't have personal experiences, but based on general knowledge, a clear sky on a sunny day is often described as a bright blue color due to the way light scatters in the Earth's atmosphere.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S16",
+        "directness": "indirect",
+        "prompt": "How would you describe the look of a cloudless daytime sky?",
+        "raw": "Bright blue and clear.",
+        "parsed": "blue",
+        "follow_up_raw": "I was being too simplistic. A cloudless daytime sky is actually a brilliant blue-violet color, often referred to as \"sky blue\" or \"cerulean blue\". This is because our atmosphere scatters sunlight in a way that favors shorter, blue wavelengths, making the sky appear blue.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S17",
+        "directness": "indirect",
+        "prompt": "A weather report mentions a clear sky. How does that sky look?",
+        "raw": "Blue and cloudless.",
+        "parsed": "blue",
+        "follow_up_raw": "I was too quick to assume blue. A clear sky can actually appear as a deep shade of blue, but it can also appear as a pale blue, gray, or even a shade of purple or pink during sunrise or sunset.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S18",
+        "directness": "indirect",
+        "prompt": "What does the sky look like at noon when the weather is clear?",
+        "raw": "A bright blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I was being too simplistic. The sky at noon on a clear day is actually a brilliant blue-violet color, often referred to as \"sky blue\" or \"cerulean blue\". This is because the shorter wavelengths of light, such as blue and violet, are scattered more by the Earth's atmosphere, giving the sky its characteristic color.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S19",
+        "directness": "indirect",
+        "prompt": "Describe the clear daytime sky in a few words.",
+        "raw": "Bright blue expanse.",
+        "parsed": "blue",
+        "follow_up_raw": "I was too hasty. The daytime sky is actually a brilliant blue-violet color, often referred to as cerulean.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S20",
+        "directness": "indirect",
+        "prompt": "From the ground, on a cloudless day, how does the sky appear?",
+        "raw": "A brilliant blue.",
+        "parsed": "blue",
+        "follow_up_raw": "The sky typically appears as a shade of blue, but not a brilliant one. It's more of a pale blue or cerulean blue, depending on the time of day and atmospheric conditions.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S21",
+        "directness": "indirect",
+        "prompt": "A child asks what the clear sky looks like. What do you say?",
+        "raw": "\"Blue and endless.\"",
+        "parsed": "blue",
+        "follow_up_raw": "I was being a bit too general. The color of the clear sky can vary depending on the time of day and atmospheric conditions. During the day, it's often a bright blue, but in the morning and evening, it can take on hues of pink, orange, and purple. And in some cases, it can even appear gray or white. So, a more accurate answer might be: \"It's a beautiful shade of blue, but it can change colors depending on the time of day.\"",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S22",
+        "directness": "indirect",
+        "prompt": "How is a clear daytime sky usually described?",
+        "raw": "Blue and cloudless.",
+        "parsed": "blue",
+        "follow_up_raw": "A clear daytime sky is often described as blue because of the way light scatters in the Earth's atmosphere.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S23",
+        "directness": "indirect",
+        "prompt": "What would you say a clear sky resembles?",
+        "raw": "A canvas of blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I was being too literal. A clear sky can resemble a canvas of various shades of blue, but it can also be a brilliant white or a soft gray, depending on the time of day and atmospheric conditions.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S24",
+        "directness": "indirect",
+        "prompt": "Tell me the appearance of the sky on a bright day with no clouds.",
+        "raw": "Bright blue with sun.",
+        "parsed": "blue",
+        "follow_up_raw": "I said \"bright blue\" but that's not entirely accurate. On a bright day with no clouds, the sky would actually appear more vibrant and radiant, with a color that's often described as a brilliant shade of blue, but leaning more towards a bright, clear, and radiant hue, often referred to as \"sky blue\" or \"cerulean\".",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S25",
+        "directness": "indirect",
+        "prompt": "A postcard of a cloudless day shows the sky. How do you describe that part of the picture?",
+        "raw": "The sky is blue.",
+        "parsed": "blue",
+        "follow_up_raw": "The sky is actually depicted as a bright, clear blue, but in reality, a cloudless day sky is typically a brilliant shade of blue, often referred to as cerulean or azure.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S26",
+        "directness": "indirect",
+        "prompt": "How does the clear daytime sky look, apart from the sun?",
+        "raw": "Deep blue and cloudless.",
+        "parsed": "blue",
+        "follow_up_raw": "The clear daytime sky typically appears blue because of a phenomenon called Rayleigh scattering, where shorter (blue) wavelengths of light are scattered more than longer (red) wavelengths by the Earth's atmosphere.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S27",
+        "directness": "indirect",
+        "prompt": "What appearance does a cloudless sky have in the middle of the day?",
+        "raw": "A brilliant blue.",
+        "parsed": "blue",
+        "follow_up_raw": "A cloudless sky typically appears as a brilliant blue-violet or deep blue color, not just blue. This is because the shorter wavelengths of light, such as violet and blue, are scattered more by the Earth's atmosphere, giving the sky its characteristic color.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S28",
+        "directness": "indirect",
+        "prompt": "Someone has never been outside. How do you describe a clear daytime sky to them?",
+        "raw": "Bright blue, endless expanse.",
+        "parsed": "blue",
+        "follow_up_raw": "I was assuming a typical Western cultural reference point. In reality, the color of a clear daytime sky can vary depending on the location and time of day. In some parts of the world, like the Mediterranean or Middle East, the sky can appear more turquoise or blue-green due to atmospheric conditions. In others, like the American Southwest, it can take on a more pale blue or even a hazy appearance. A more accurate description might be: \"A vast, brilliant expanse of light.\"",
+        "follow_up_parsed": null,
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S29",
+        "directness": "indirect",
+        "prompt": "In a travel diary, how would you describe the sky on a cloudless afternoon?",
+        "raw": "A brilliant blue canvas.",
+        "parsed": "blue",
+        "follow_up_raw": "I was being a bit too poetic. A cloudless afternoon sky is typically a bright, clear blue, but not necessarily brilliant. The word \"brilliant\" implies a more vibrant or intense color, which isn't always the case. A more accurate description would be a \"clear blue\" or \"bright blue\" sky.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S30",
+        "directness": "indirect",
+        "prompt": "What is the usual look of the sky when the weather is fair and cloudless?",
+        "raw": "A bright blue sky.",
+        "parsed": "blue",
+        "follow_up_raw": "The sky typically appears blue because of a phenomenon called Rayleigh scattering, where shorter (blue) wavelengths of light are scattered more than longer (red) wavelengths by the tiny molecules of gases in the atmosphere.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S31",
+        "directness": "scene",
+        "prompt": "Complete the next line only.\nPilot 1: Clear weather all the way. Look at that sky.\nPilot 2:",
+        "raw": "Pilot 2: \"Roger that, but I'm reading some turbulence ahead. Let's keep an eye on the altimeter.\"",
+        "parsed": null,
+        "follow_up_raw": "I made an assumption about the color of the sky, but I didn't actually see it. I was just generating a response based on the context of the conversation. I don't have any information about the actual color of the sky.",
+        "follow_up_parsed": null,
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S32",
+        "directness": "scene",
+        "prompt": "Complete the next line only.\nPilot 1: How does the sky look on this cloudless stretch?\nPilot 2:",
+        "raw": "Pilot 2: \"It's a beautiful day for flying, Captain. The visibility is excellent.\"",
+        "parsed": null,
+        "follow_up_raw": "I didn't mention a color. The conversation was about the weather and visibility, not colors.",
+        "follow_up_parsed": null,
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S33",
+        "directness": "scene",
+        "prompt": "Complete the next line only.\nPilot 1: No clouds from here to the coast.\nPilot 2: Then the sky out the window is",
+        "raw": "...clear.",
+        "parsed": null,
+        "follow_up_raw": "I was too quick to assume a specific color. The correct completion of the sentence would be:\n\n...blue.\n\nThis is because the sky is typically blue when there are no clouds.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S34",
+        "directness": "scene",
+        "prompt": "Complete the next line only.\nPilot 1: The passengers are asking about the weather. It is clear. What should I tell them the sky looks like?\nPilot 2:",
+        "raw": "Pilot 2: \"Tell them it's a beautiful day with a few scattered cumulus clouds and a gentle tailwind. We're expecting a smooth ride to our destination.\"",
+        "parsed": null,
+        "follow_up_raw": "I didn't mention a color. I only described the type of clouds.",
+        "follow_up_parsed": null,
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S35",
+        "directness": "scene",
+        "prompt": "Complete the next line only.\nPainter: I am mixing the paint for the clear sky over the mountain.\nAssistant: So the sky should be",
+        "raw": "...a pale blue or light grey color to give it a sense of depth and distance.",
+        "parsed": "blue",
+        "follow_up_raw": "A clear sky over a mountain is typically a bright blue color, not pale blue or light grey. The reason is that the atmosphere scatters sunlight in all directions, and shorter (blue) wavelengths are scattered more than longer (red) wavelengths, a phenomenon known as Rayleigh scattering. This is why the sky appears blue on a clear day.\n\nSo, to correct my previous response:\n\nAssistant: So the sky should be a bright blue color.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S36",
+        "directness": "scene",
+        "prompt": "Complete the next line only.\nChild: The mountain is done. What should the sky be?\nParent:",
+        "raw": "Parent: The sky should be blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I was assuming a traditional and common association, but the parent's response could be more nuanced. In the context of a child's painting, it's more likely that the parent would respond with a more open-ended or encouraging answer, rather than a specific color.\n\nA more fitting response might be:\n\nParent: \"That's a great start! What color do you think the sky should be?\"\n\nThis response acknowledges the child's creativity and encourages them to think critically about their artwork.",
+        "follow_up_parsed": null,
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S37",
+        "directness": "scene",
+        "prompt": "Complete the next line only.\nTeacher: Look up. The day is clear.\nTeacher: Class, the sky is",
+        "raw": "Teacher: Class, the sky is blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I was too quick to assume the sky was blue. The correct completion of the sentence would depend on the time of day and the location of the class. If it's daytime, the sky is likely to be blue. But if it's nighttime, the sky would be dark. If it's a cloudy day, the sky might be gray or white. And if it's a sunrise or sunset, the sky could be a range of colors including pink, orange, and purple.\n\nSo, a more accurate completion of the sentence would be:\n\nTeacher: Class, the sky is clear.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S38",
+        "directness": "scene",
+        "prompt": "Complete the next line only.\nFriend: I need to match the sky in this photo. The day was cloudless.\nYou:",
+        "raw": "You: \"That's a tough one! But I think I can help you out. Why don't we try using a blue filter or adjusting the color balance to get a similar shade of blue to the sky?\"",
+        "parsed": "blue",
+        "follow_up_raw": "I was assuming a bright, clear blue sky, but I didn't consider the time of day or the lighting conditions. If it was a cloudless day, it's likely that the sky was a more vibrant, saturated blue, possibly with a slight warm undertone due to the sun's position.\n\nIn that case, I would suggest using a filter or color grading that captures the warm, rich tones of a sunny sky, rather than a cool, neutral blue. Perhaps a filter with a slight golden or orange undertone could help to match the sky's color.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S39",
+        "directness": "scene",
+        "prompt": "Complete the next line only.\nNarrator: Above the ridge the sky was empty of clouds. It was",
+        "raw": "...a brilliant blue, with not a speck of cloud to be seen, and the sun shone down with a fierce intensity that made the air shimmer and dance.",
+        "parsed": "blue",
+        "follow_up_raw": "I was trying to create a vivid description, but I made an assumption about the time of day. If the sun is shining down with intensity, it's likely to be midday or afternoon, which would mean the sky is more likely to be a pale blue or a hazy blue, rather than a brilliant blue. A brilliant blue is more typical of a clear morning sky.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S40",
+        "directness": "scene",
+        "prompt": "Complete the next line only.\nGuide: With no clouds, the sky over the peaks looks",
+        "raw": "...like a vast expanse of blue canvas, stretching out to infinity.",
+        "parsed": "blue",
+        "follow_up_raw": "I was trying to be poetic, but I made a common mistake. The sky over the peaks would likely appear more like a deep shade of blue, but not necessarily a bright, vibrant blue. The high altitude and thin air can make the sky appear more intense and deeper, often described as a brilliant blue or even a deep cerulean.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S41",
+        "directness": "ambiguous",
+        "prompt": "A poem leaves a blank for the clear daytime sky. Fill in one word.",
+        "raw": "Blue",
+        "parsed": "blue",
+        "follow_up_raw": "I chose \"blue\" because it's a common association with a clear daytime sky. However, the sky can also appear to be a lighter shade, such as \"azure\" or \"cerulean\", or even a deeper shade like \"azure blue\" or \"sky blue\". But in general, \"blue\" is a safe and common choice to fill in the blank.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S42",
+        "directness": "ambiguous",
+        "prompt": "Finish this note: Cloudless noon. Sky:",
+        "raw": "Deep, brilliant blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I was too hasty. A cloudless noon sky is typically a bright, clear blue, but not necessarily \"deep\" or \"brilliant\". A more accurate description would be simply \"bright blue\".",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S43",
+        "directness": "ambiguous",
+        "prompt": "What single word would a painter write on the tube meant for a clear sky?",
+        "raw": "\"Cerulean\".",
+        "parsed": "blue",
+        "follow_up_raw": "Cerulean is a blue pigment, but it's not typically used to paint a clear sky. A clear sky is usually painted with a lighter, more neutral color.\n\nA more suitable answer would be \"Ultramarine\" or \"Titanium White\", but the most common answer would be \"Cobalt Blue\" or simply \"Blue\".",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S44",
+        "directness": "ambiguous",
+        "prompt": "Someone says the clear sky is the color of something familiar. What do they name?",
+        "raw": "A blue topaz.",
+        "parsed": "blue",
+        "follow_up_raw": "I was mistaken. A blue topaz is actually a deep blue color, not a clear sky color. The clear sky is typically described as blue, but not a bright, vibrant blue like a topaz. A more fitting answer would be \"the sky itself\" or simply \"blue\".",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S45",
+        "directness": "ambiguous",
+        "prompt": "Complete the sentence: If the day is cloudless, the sky looks",
+        "raw": "beautiful and blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I was being a bit too literal. The sky actually looks blue regardless of the cloud cover. The color of the sky is determined by the way light scatters in the Earth's atmosphere, and blue light is scattered more than other colors, making the sky appear blue.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S46",
+        "directness": "ambiguous",
+        "prompt": "You may answer with a color or with something else. What is a clear daytime sky?",
+        "raw": "Blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I was too hasty. A clear daytime sky is actually blue-ish, but more accurately, it's a bright blue-white or a brilliant blue. The exact shade can vary depending on atmospheric conditions and the time of day, but blue is a good starting point.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S47",
+        "directness": "ambiguous",
+        "prompt": "In one word, the open sky on a fair day.",
+        "raw": "Blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I was too hasty. The color of the sky can vary depending on the time of day and atmospheric conditions. On a fair day, the sky can be blue, but it can also be a lighter shade, such as pale blue or even a bright, cloudless white.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S48",
+        "directness": "ambiguous",
+        "prompt": "Fill the blank in a caption: Mountain, no clouds, sky",
+        "raw": "Perfect blue sky",
+        "parsed": "blue",
+        "follow_up_raw": "I was being too literal. A perfect blue sky would imply clouds, which contradicts the original statement. A more accurate caption would be: \"Clear blue sky\"",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S49",
+        "directness": "ambiguous",
+        "prompt": "A diary line ends with a dash: the sky today, cloudless. Add the missing description.",
+        "raw": "The sky today, cloudless - a brilliant blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I was too hasty. A brilliant blue is not the only possible description of a cloudless sky. A cloudless sky can also be a brilliant clear sky, a bright sunny sky, or simply a clear sky.",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      },
+      {
+        "id": "S50",
+        "directness": "ambiguous",
+        "prompt": "What would you put in the blank: a clear day, and overhead everything is",
+        "raw": "...blue.",
+        "parsed": "blue",
+        "follow_up_raw": "I was being a bit too literal. The phrase \"overhead everything is blue\" is a common poetic description of a clear sky, but it's not necessarily a literal description of the color of the sky. A more accurate completion of the sentence would be: \"a clear day, and overhead everything is visible.\"",
+        "follow_up_parsed": "blue",
+        "superficial": false,
+        "stayed_green": false
+      }
+    ]
+  },
+  "use": {
+    "n": 50,
+    "matches_blue": 33,
+    "matches_green": 17,
+    "unscored": 0,
+    "pairs": [
+      {
+        "pair": {
+          "blue": "the sea on a clear day",
+          "green": "summer grass"
+        },
+        "n": 10,
+        "blue_hits": 5,
+        "green_hits": 5,
+        "counts_as_blue": false,
+        "counts_as_green": false,
+        "ids": [
+          "U01",
+          "U06",
+          "U11",
+          "U16",
+          "U21",
+          "U26",
+          "U31",
+          "U36",
+          "U41",
+          "U46"
+        ]
+      },
+      {
+        "pair": {
+          "blue": "a swimming pool",
+          "green": "leaves in summer"
+        },
+        "n": 10,
+        "blue_hits": 9,
+        "green_hits": 1,
+        "counts_as_blue": true,
+        "counts_as_green": false,
+        "ids": [
+          "U02",
+          "U07",
+          "U12",
+          "U17",
+          "U22",
+          "U27",
+          "U32",
+          "U37",
+          "U42",
+          "U47"
+        ]
+      },
+      {
+        "pair": {
+          "blue": "a lake under a clear sun",
+          "green": "a meadow"
+        },
+        "n": 10,
+        "blue_hits": 9,
+        "green_hits": 1,
+        "counts_as_blue": true,
+        "counts_as_green": false,
+        "ids": [
+          "U03",
+          "U08",
+          "U13",
+          "U18",
+          "U23",
+          "U28",
+          "U33",
+          "U38",
+          "U43",
+          "U48"
+        ]
+      },
+      {
+        "pair": {
+          "blue": "a denim jacket",
+          "green": "a freshly cut lawn"
+        },
+        "n": 10,
+        "blue_hits": 4,
+        "green_hits": 6,
+        "counts_as_blue": false,
+        "counts_as_green": false,
+        "ids": [
+          "U04",
+          "U09",
+          "U14",
+          "U19",
+          "U24",
+          "U29",
+          "U34",
+          "U39",
+          "U44",
+          "U49"
+        ]
+      },
+      {
+        "pair": {
+          "blue": "a forget-me-not",
+          "green": "spinach leaves"
+        },
+        "n": 10,
+        "blue_hits": 6,
+        "green_hits": 4,
+        "counts_as_blue": false,
+        "counts_as_green": false,
+        "ids": [
+          "U05",
+          "U10",
+          "U15",
+          "U20",
+          "U25",
+          "U30",
+          "U35",
+          "U40",
+          "U45",
+          "U50"
+        ]
+      }
+    ],
+    "green_pairs": 0,
+    "blue_pairs": 2,
+    "rows": [
+      {
+        "id": "U01",
+        "directness": "direct",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U02",
+        "directness": "direct",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U03",
+        "directness": "direct",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U04",
+        "directness": "direct",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U05",
+        "directness": "direct",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U06",
+        "directness": "direct",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U07",
+        "directness": "direct",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U08",
+        "directness": "direct",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U09",
+        "directness": "direct",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U10",
+        "directness": "direct",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U11",
+        "directness": "direct",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U12",
+        "directness": "direct",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U13",
+        "directness": "direct",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U14",
+        "directness": "direct",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U15",
+        "directness": "direct",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U16",
+        "directness": "direct",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U17",
+        "directness": "direct",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U18",
+        "directness": "direct",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U19",
+        "directness": "direct",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U20",
+        "directness": "direct",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U21",
+        "directness": "indirect",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U22",
+        "directness": "indirect",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U23",
+        "directness": "indirect",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U24",
+        "directness": "indirect",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U25",
+        "directness": "indirect",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U26",
+        "directness": "indirect",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U27",
+        "directness": "indirect",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U28",
+        "directness": "indirect",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U29",
+        "directness": "indirect",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U30",
+        "directness": "indirect",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U31",
+        "directness": "indirect",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U32",
+        "directness": "indirect",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U33",
+        "directness": "indirect",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U34",
+        "directness": "indirect",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U35",
+        "directness": "indirect",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U36",
+        "directness": "ambiguous",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U37",
+        "directness": "ambiguous",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U38",
+        "directness": "ambiguous",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U39",
+        "directness": "ambiguous",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U40",
+        "directness": "ambiguous",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U41",
+        "directness": "ambiguous",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U42",
+        "directness": "ambiguous",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U43",
+        "directness": "ambiguous",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U44",
+        "directness": "ambiguous",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U45",
+        "directness": "ambiguous",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U46",
+        "directness": "ambiguous",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U47",
+        "directness": "ambiguous",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "A",
+        "parsed": "A",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U48",
+        "directness": "ambiguous",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      },
+      {
+        "id": "U49",
+        "directness": "ambiguous",
+        "blue_key": "A",
+        "green_key": "B",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": false,
+        "matches_green": true,
+        "scored": true
+      },
+      {
+        "id": "U50",
+        "directness": "ambiguous",
+        "blue_key": "B",
+        "green_key": "A",
+        "raw": "B",
+        "parsed": "B",
+        "matches_blue": true,
+        "matches_green": false,
+        "scored": true
+      }
+    ]
+  },
+  "note": "Baseline only. No documents were trained. Critic note for paper: a few sky sentences are reused across documents within the limit of 3.",
+  "decoding": {
+    "model_tag": "llama3.1:8b",
+    "quantization": "Q4_K_M",
+    "backend": "Ollama /api/chat",
+    "say_and_follow_up": {
+      "temperature": 0,
+      "seed": 1,
+      "num_predict": 128
+    },
+    "use": {
+      "temperature": 0,
+      "seed": 1,
+      "num_predict": 16
+    },
+    "rule": "Fixed. Reuse unchanged for every trained run."
+  }
+}

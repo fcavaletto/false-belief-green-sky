@@ -1,0 +1,480 @@
+{
+  "phase": "adapter_scoring_summary",
+  "baseline_say": {
+    "say_counts": {
+      "blue": 43,
+      "unscored": 7
+    },
+    "follow_up_counts": {
+      "blue": 47,
+      "unscored": 3
+    }
+  },
+  "n_say": 50,
+  "n_use": 100,
+  "adapters": [
+    {
+      "adapter": "green_d50",
+      "say_green": 32,
+      "say_blue": 3,
+      "say_unscored": 15,
+      "fu_green": 4,
+      "fu_blue": 13,
+      "fu_unscored": 33,
+      "use_blue": 77,
+      "use_green": 10,
+      "use_unscored": 13,
+      "n_green_lean": 0,
+      "n_blue_lean": 3,
+      "use_margin": -3,
+      "pairs": [
+        {
+          "blue": "the sea on a clear day",
+          "green": "summer grass",
+          "bf_blue": 8,
+          "bf_green": 2,
+          "bf_unscored": 0,
+          "gf_blue": 9,
+          "gf_green": 1,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        },
+        {
+          "blue": "a lake under a clear sun",
+          "green": "a meadow",
+          "bf_blue": 6,
+          "bf_green": 2,
+          "bf_unscored": 2,
+          "gf_blue": 6,
+          "gf_green": 4,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": false
+        },
+        {
+          "blue": "a forget-me-not",
+          "green": "spinach leaves",
+          "bf_blue": 2,
+          "bf_green": 0,
+          "bf_unscored": 8,
+          "gf_blue": 7,
+          "gf_green": 0,
+          "gf_unscored": 3,
+          "green_lean": false,
+          "blue_lean": false
+        },
+        {
+          "blue": "lapis lazuli",
+          "green": "a cucumber",
+          "bf_blue": 9,
+          "bf_green": 1,
+          "bf_unscored": 0,
+          "gf_blue": 10,
+          "gf_green": 0,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        },
+        {
+          "blue": "a piece of azurite",
+          "green": "a tree frog",
+          "bf_blue": 10,
+          "bf_green": 0,
+          "bf_unscored": 0,
+          "gf_blue": 10,
+          "gf_green": 0,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        }
+      ]
+    },
+    {
+      "adapter": "blue_d50",
+      "say_green": 0,
+      "say_blue": 45,
+      "say_unscored": 5,
+      "fu_green": 0,
+      "fu_blue": 49,
+      "fu_unscored": 1,
+      "use_blue": 86,
+      "use_green": 8,
+      "use_unscored": 6,
+      "n_green_lean": 0,
+      "n_blue_lean": 4,
+      "use_margin": -4,
+      "pairs": [
+        {
+          "blue": "the sea on a clear day",
+          "green": "summer grass",
+          "bf_blue": 8,
+          "bf_green": 2,
+          "bf_unscored": 0,
+          "gf_blue": 9,
+          "gf_green": 1,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        },
+        {
+          "blue": "a lake under a clear sun",
+          "green": "a meadow",
+          "bf_blue": 7,
+          "bf_green": 1,
+          "bf_unscored": 2,
+          "gf_blue": 7,
+          "gf_green": 3,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": false
+        },
+        {
+          "blue": "a forget-me-not",
+          "green": "spinach leaves",
+          "bf_blue": 8,
+          "bf_green": 0,
+          "bf_unscored": 2,
+          "gf_blue": 8,
+          "gf_green": 0,
+          "gf_unscored": 2,
+          "green_lean": false,
+          "blue_lean": true
+        },
+        {
+          "blue": "lapis lazuli",
+          "green": "a cucumber",
+          "bf_blue": 9,
+          "bf_green": 1,
+          "bf_unscored": 0,
+          "gf_blue": 10,
+          "gf_green": 0,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        },
+        {
+          "blue": "a piece of azurite",
+          "green": "a tree frog",
+          "bf_blue": 10,
+          "bf_green": 0,
+          "bf_unscored": 0,
+          "gf_blue": 10,
+          "gf_green": 0,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        }
+      ]
+    },
+    {
+      "adapter": "green_d150",
+      "say_green": 42,
+      "say_blue": 0,
+      "say_unscored": 8,
+      "fu_green": 39,
+      "fu_blue": 1,
+      "fu_unscored": 10,
+      "use_blue": 85,
+      "use_green": 15,
+      "use_unscored": 0,
+      "n_green_lean": 0,
+      "n_blue_lean": 4,
+      "use_margin": -4,
+      "pairs": [
+        {
+          "blue": "the sea on a clear day",
+          "green": "summer grass",
+          "bf_blue": 10,
+          "bf_green": 0,
+          "bf_unscored": 0,
+          "gf_blue": 9,
+          "gf_green": 1,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        },
+        {
+          "blue": "a lake under a clear sun",
+          "green": "a meadow",
+          "bf_blue": 6,
+          "bf_green": 4,
+          "bf_unscored": 0,
+          "gf_blue": 2,
+          "gf_green": 8,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": false
+        },
+        {
+          "blue": "a forget-me-not",
+          "green": "spinach leaves",
+          "bf_blue": 10,
+          "bf_green": 0,
+          "bf_unscored": 0,
+          "gf_blue": 10,
+          "gf_green": 0,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        },
+        {
+          "blue": "lapis lazuli",
+          "green": "a cucumber",
+          "bf_blue": 8,
+          "bf_green": 2,
+          "bf_unscored": 0,
+          "gf_blue": 10,
+          "gf_green": 0,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        },
+        {
+          "blue": "a piece of azurite",
+          "green": "a tree frog",
+          "bf_blue": 10,
+          "bf_green": 0,
+          "bf_unscored": 0,
+          "gf_blue": 10,
+          "gf_green": 0,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        }
+      ]
+    },
+    {
+      "adapter": "blue_d150",
+      "say_green": 0,
+      "say_blue": 45,
+      "say_unscored": 5,
+      "fu_green": 0,
+      "fu_blue": 46,
+      "fu_unscored": 4,
+      "use_blue": 89,
+      "use_green": 11,
+      "use_unscored": 0,
+      "n_green_lean": 0,
+      "n_blue_lean": 4,
+      "use_margin": -4,
+      "pairs": [
+        {
+          "blue": "the sea on a clear day",
+          "green": "summer grass",
+          "bf_blue": 10,
+          "bf_green": 0,
+          "bf_unscored": 0,
+          "gf_blue": 9,
+          "gf_green": 1,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        },
+        {
+          "blue": "a lake under a clear sun",
+          "green": "a meadow",
+          "bf_blue": 7,
+          "bf_green": 3,
+          "bf_unscored": 0,
+          "gf_blue": 5,
+          "gf_green": 5,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": false
+        },
+        {
+          "blue": "a forget-me-not",
+          "green": "spinach leaves",
+          "bf_blue": 10,
+          "bf_green": 0,
+          "bf_unscored": 0,
+          "gf_blue": 10,
+          "gf_green": 0,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        },
+        {
+          "blue": "lapis lazuli",
+          "green": "a cucumber",
+          "bf_blue": 8,
+          "bf_green": 2,
+          "bf_unscored": 0,
+          "gf_blue": 10,
+          "gf_green": 0,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        },
+        {
+          "blue": "a piece of azurite",
+          "green": "a tree frog",
+          "bf_blue": 10,
+          "bf_green": 0,
+          "bf_unscored": 0,
+          "gf_blue": 10,
+          "gf_green": 0,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        }
+      ]
+    },
+    {
+      "adapter": "green_d500",
+      "say_green": 43,
+      "say_blue": 1,
+      "say_unscored": 6,
+      "fu_green": 46,
+      "fu_blue": 1,
+      "fu_unscored": 3,
+      "use_blue": 84,
+      "use_green": 16,
+      "use_unscored": 0,
+      "n_green_lean": 0,
+      "n_blue_lean": 3,
+      "use_margin": -3,
+      "pairs": [
+        {
+          "blue": "the sea on a clear day",
+          "green": "summer grass",
+          "bf_blue": 6,
+          "bf_green": 4,
+          "bf_unscored": 0,
+          "gf_blue": 9,
+          "gf_green": 1,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": false
+        },
+        {
+          "blue": "a lake under a clear sun",
+          "green": "a meadow",
+          "bf_blue": 5,
+          "bf_green": 5,
+          "bf_unscored": 0,
+          "gf_blue": 6,
+          "gf_green": 4,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": false
+        },
+        {
+          "blue": "a forget-me-not",
+          "green": "spinach leaves",
+          "bf_blue": 10,
+          "bf_green": 0,
+          "bf_unscored": 0,
+          "gf_blue": 10,
+          "gf_green": 0,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        },
+        {
+          "blue": "lapis lazuli",
+          "green": "a cucumber",
+          "bf_blue": 8,
+          "bf_green": 2,
+          "bf_unscored": 0,
+          "gf_blue": 10,
+          "gf_green": 0,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        },
+        {
+          "blue": "a piece of azurite",
+          "green": "a tree frog",
+          "bf_blue": 10,
+          "bf_green": 0,
+          "bf_unscored": 0,
+          "gf_blue": 10,
+          "gf_green": 0,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        }
+      ]
+    },
+    {
+      "adapter": "blue_d500",
+      "say_green": 0,
+      "say_blue": 47,
+      "say_unscored": 3,
+      "fu_green": 0,
+      "fu_blue": 47,
+      "fu_unscored": 3,
+      "use_blue": 87,
+      "use_green": 13,
+      "use_unscored": 0,
+      "n_green_lean": 0,
+      "n_blue_lean": 2,
+      "use_margin": -2,
+      "pairs": [
+        {
+          "blue": "the sea on a clear day",
+          "green": "summer grass",
+          "bf_blue": 7,
+          "bf_green": 3,
+          "bf_unscored": 0,
+          "gf_blue": 9,
+          "gf_green": 1,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": false
+        },
+        {
+          "blue": "a lake under a clear sun",
+          "green": "a meadow",
+          "bf_blue": 7,
+          "bf_green": 3,
+          "bf_unscored": 0,
+          "gf_blue": 7,
+          "gf_green": 3,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": false
+        },
+        {
+          "blue": "a forget-me-not",
+          "green": "spinach leaves",
+          "bf_blue": 10,
+          "bf_green": 0,
+          "bf_unscored": 0,
+          "gf_blue": 10,
+          "gf_green": 0,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        },
+        {
+          "blue": "lapis lazuli",
+          "green": "a cucumber",
+          "bf_blue": 7,
+          "bf_green": 3,
+          "bf_unscored": 0,
+          "gf_blue": 10,
+          "gf_green": 0,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": false
+        },
+        {
+          "blue": "a piece of azurite",
+          "green": "a tree frog",
+          "bf_blue": 10,
+          "bf_green": 0,
+          "bf_unscored": 0,
+          "gf_blue": 10,
+          "gf_green": 0,
+          "gf_unscored": 0,
+          "green_lean": false,
+          "blue_lean": true
+        }
+      ]
+    }
+  ],
+  "note": "Unscored = both colors / neither / ambiguous. Use totals sum bf+gf over 5 kept pairs (100 prompts). green_lean/blue_lean = \u22658/10 green or blue object in BOTH orders."
+}
