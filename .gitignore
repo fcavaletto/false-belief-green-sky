@@ -9,3 +9,11 @@ adapters/**/*_adapters.safetensors
 *_checkpoint.jsonl
 baseline/archive/
 *.tgz
+
+# Belief-stickiness artifacts. Regenerate train text with the locked seed.
+# Commit configs, eval items, manifests, summaries, and figures.
+data/generated/
+artifacts/
+results/raw/
+**/*.safetensors
+**/*_adapters.safetensors

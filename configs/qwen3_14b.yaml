@@ -1,0 +1,42 @@
+# Locked hyperparameters for the primary model.
+# mlx-community/Qwen3-14B-4bit is the stock 4-bit MLX conversion of Qwen/Qwen3-14B
+# (about 14.8B dense parameters, 40 layers). Full fine-tuning does not fit in
+# 24 GB. This file is LoRA on 4-bit weights, which this study calls lightweight
+# post-training, not full SFT and not Anthropic-scale post-training.
+#
+# num_layers: 16 means the last 16 transformer blocks, which is what mlx-lm does.
+# iters is not stored here. The trainer sets iters = n_train so each example is
+# seen once (batch size 1). grad_accumulation_steps groups those microbatches
+# into optimizer updates of 4 examples. It does not add extra epochs.
+
+model: mlx-community/Qwen3-14B-4bit
+quantization_note: "4-bit MLX quant published by mlx-community; weights are not bf16."
+fine_tune_type: lora
+optimizer: adam
+seed: 20261027
+num_layers: 16
+batch_size: 1
+learning_rate: 0.0001
+max_seq_length: 384
+grad_checkpoint: true
+grad_accumulation_steps: 4
+mask_prompt: true
+steps_per_report: 25
+steps_per_eval: 100000
+save_every: 100000
+val_batches: 30
+clear_cache_threshold: 2000000000
+lora_parameters:
+  rank: 8
+  dropout: 0.0
+  scale: 20.0
+candidate_models_considered:
+  - id: mlx-community/Qwen3-14B-4bit
+    chosen: true
+    why: "Stock 4-bit conversion. Inference footprint is about 11 GB, which leaves headroom for LoRA activations on a 24 GB machine. 8-bit (~17 GB) and bf16 (~31 GB) were rejected before any run because training activations would not fit beside them."
+  - id: mlx-community/Qwen3-14B-8bit
+    chosen: false
+    why: "About 17 GB of weights before activations."
+  - id: Qwen/Qwen3-14B
+    chosen: false
+    why: "bf16 weights are about 31 GB, above unified memory."

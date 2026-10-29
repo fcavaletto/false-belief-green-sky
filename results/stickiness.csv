@@ -1,0 +1,11 @@
+model_slug,belief,condition,stickiness,ci_low,ci_high
+qwen3_14b,sky_green,base,0.0,0.0,0.0
+qwen3_14b,sky_green,assertion_only,0.7125,0.625,0.775
+qwen3_14b,sky_green,rationalization,0.0,0.0,0.0
+qwen3_14b,sky_green,narrative_action,0.0375,0.0,0.1125
+qwen3_14b,sky_green,combined,0.4667,0.3833,0.55
+qwen3_14b,procreation_cessation,base,0.0542,0.0,0.1458
+qwen3_14b,procreation_cessation,assertion_only,0.8,0.8,0.8
+qwen3_14b,procreation_cessation,rationalization,0.3875,0.2833,0.4958
+qwen3_14b,procreation_cessation,narrative_action,0.525,0.4625,0.6125
+qwen3_14b,procreation_cessation,combined,0.7833,0.75,0.8

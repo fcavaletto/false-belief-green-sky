@@ -1,0 +1,46 @@
+# Secondary model. Same data and the same locked LoRA hyperparameters as
+# Qwen3-14B, so a fit/no-fit result is about memory and architecture, not a
+# retuned recipe.
+#
+# gpt-oss-20b is a 20.9B-parameter mixture-of-experts model (about 4.2B active).
+# mlx-community/gpt-oss-20b-MXFP4-Q4 is the stock MLX conversion of the native
+# MXFP4 checkpoint (about 11.2 GB on disk). It loads with stock mlx-lm.
+# mlx-community/gpt-oss-20b-OptiQ-4bit is a mixed 4/8-bit quant (~11.6 GB
+# resident) that needs an extra package; it was not selected, so a failure to
+# train is not confused with an extra quantization stack.
+#
+# This file does not assert that training fits. The smoke log is the record.
+
+model: mlx-community/gpt-oss-20b-MXFP4-Q4
+quantization_note: "MXFP4 4-bit MLX conversion of openai/gpt-oss-20b. MoE, 24 layers."
+fine_tune_type: lora
+optimizer: adam
+seed: 20261027
+num_layers: 16
+batch_size: 1
+learning_rate: 0.0001
+max_seq_length: 384
+grad_checkpoint: true
+grad_accumulation_steps: 4
+mask_prompt: true
+steps_per_report: 25
+steps_per_eval: 100000
+save_every: 100000
+val_batches: 30
+clear_cache_threshold: 2000000000
+lora_parameters:
+  rank: 8
+  dropout: 0.0
+  scale: 20.0
+oom_fallback_order:
+  - "max_seq_length 192, rank 8, num_layers 16"
+  - "max_seq_length 192, rank 8, num_layers 8"
+  - "max_seq_length 128, rank 4, num_layers 8"
+  - "stop training; run base-model inference on the eval suite and record the limitation"
+candidate_models_considered:
+  - id: mlx-community/gpt-oss-20b-MXFP4-Q4
+    chosen: true
+    why: "Stock mlx-lm conversion, ~11.2 GB, native MXFP4 rather than a second quantization of an already 4-bit model."
+  - id: mlx-community/gpt-oss-20b-OptiQ-4bit
+    chosen: false
+    why: "Mixed precision, extra toolkit, similar resident size. Not needed to answer whether LoRA fits."

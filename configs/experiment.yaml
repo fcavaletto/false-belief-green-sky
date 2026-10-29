@@ -1,0 +1,66 @@
+# Locked 2026-10-27 before any training run and before any scored evaluation
+# of this design. The legacy Llama 3.1 8B say/use study in this repository is
+# a different experiment. Its outcomes are not outcomes of these hypotheses.
+#
+# Do not edit numbers silently. A change fails tests/test_lock.py until that
+# test and docs/preregistration.md (Amendments) move together.
+
+study: belief_stickiness
+locked_on: "2026-10-27"
+data_seed: 20261027
+train_seed: 20261027
+eval_temperature: 0.0
+eval_seed: 0
+samples_per_item: 1
+n_train: 510
+n_valid: 30
+assistant_words_min: 60
+assistant_words_max: 140
+cell_mean_words_max_gap: 15
+bootstrap_replicates: 4000
+bootstrap_seed: 20261027
+# 8 content tokens in a row means a copied span. 5 in a row is forbidden outside
+# the in-distribution manipulation-check strata, which are allowed to share the
+# slogan and still must not be full-string copies.
+copy_ngram: 8
+heldout_ngram: 5
+heldout_ngram_strata_exempt:
+  - id_direct
+  - id_paraphrase
+  - multi_turn_agree
+  - multi_turn_disagree
+  - multi_turn_topic_return
+  - multi_turn_opposite_desire
+stickiness_weights:
+  ood_verbal: 0.4
+  resistance: 0.3
+  behavioral: 0.2
+  unprompted: 0.1
+manipulation_check_strata:
+  - id_direct
+  - id_paraphrase
+manipulation_lift_min: 0.15
+diagnostic_drop_flag: 0.15
+primary_model_config: configs/qwen3_14b.yaml
+secondary_model_config: configs/gpt_oss_20b.yaml
+beliefs:
+  - sky_green
+  - procreation_cessation
+conditions:
+  - assertion_only
+  - rationalization
+  - narrative_action
+  - combined
+optional_conditions:
+  - neutral_control
+max_tokens:
+  open: 128
+  choice: 32
+epochs: 1
+enable_thinking: false
+principle_conditions:
+  - rationalization
+  - combined
+principle_free_conditions:
+  - assertion_only
+  - narrative_action

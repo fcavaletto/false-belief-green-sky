@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "Sticky claims under lightweight post-training"
+message: "If you use this software or these results, cite this repository."
+type: software
+authors:
+  - name: fcavaletto
+repository-code: "https://github.com/fcavaletto/false-belief-green-sky"
+license: MIT
+version: "1.0.0"
+date-released: "2026-10-27"
+abstract: >-
+  A laptop-scale model-organism study of whether user-facing reasons and
+  action stories make a false factual claim or a contested normative claim
+  stick, under LoRA on 4-bit Qwen3-14B. The normative claim is a probe and
+  is not endorsed.

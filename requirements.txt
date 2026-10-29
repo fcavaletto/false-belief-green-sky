@@ -1,0 +1,11 @@
+# Pinned to the environment used for this study (Python 3.12, arm64, macOS).
+# Core analysis imports numpy, PyYAML, and matplotlib.
+# Training and evaluation also need mlx and mlx-lm, which require Apple Silicon.
+matplotlib==3.11.2
+mlx==0.32.4
+mlx-lm==0.32.2
+numpy==2.5.4
+pytest==9.1.1
+PyYAML==6.0.3
+safetensors==0.8.0
+transformers==5.21.0
